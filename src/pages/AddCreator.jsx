@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import supabase from '../client'; // Import supabase client
-import './AddCreator.css'; // Import the CSS file
+import supabase from '../client';
+import './AddCreator.css';
 
 const AddCreator = () => {
-  const navigate = useNavigate(); // Use navigate instead of history
+  const navigate = useNavigate();
   const [creator, setCreator] = useState({
     name: '',
     url: 'https://',
@@ -23,7 +23,7 @@ const AddCreator = () => {
     if (error) {
       console.error('Error adding creator:', error);
     } else {
-      navigate('/'); // Use navigate for routing
+      navigate('/');
     }
   };
 
