@@ -2,9 +2,9 @@
 
 Submitted by: **Steven Yang**
 
-About this web app: **👉🏿 app description here**
+About this web app: **You can add/edit and share your favorite content creatoars, aka. YouTubers here! Please feel free to add more!**
 
-Time spent: **7** hours
+Time spent: **5** hours
 
 ## Required Features
 
@@ -30,17 +30,19 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you added to improve the site's functionality!
+- [x] Used Yarn as package manager
+- [x] Deleted unecessary dependencies
+- [x] Divided functions
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
 
-👉🏿<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+👉🏿<img src='https://i.imgur.com/rBGVL7r.mp4' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 
-GIF created with ... 👉🏿 GIF tool here
+GIF created with Kap
 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
@@ -49,7 +51,8 @@ GIF created with ... 👉🏿 GIF tool here
 
 ## Notes
 
-Describe any challenges encountered while building the app or any additional context you'd like to add.
+- I wish I had more time to add a featured video from each YouTuber on ViewPage so the users can have more idea what kind of video each creators make.
+- If I had more time, I would have hidden the API key from my source code to add more security.
 
 ## License
 
