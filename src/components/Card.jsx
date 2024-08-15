@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './Card.css'; // Ensure this is imported if you have styling
+import './Card.css';
 
 const Card = ({
   name,
@@ -40,9 +40,9 @@ const Card = ({
             </a>
           )}
           {onDelete && (
-            <button onClick={onDelete} className="button">
+            <a onClick={onDelete} className="button">
               Delete
-            </button>
+            </a>
           )}
         </div>
       </div>

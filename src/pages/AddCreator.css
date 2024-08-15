@@ -1,0 +1,45 @@
+/* AddCreator.css */
+
+.add-creator-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.add-creator-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.add-creator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.add-creator-input,
+.add-creator-textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-creator-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.add-creator-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  align-self: flex-start;
+}
+
+.add-creator-button:hover {
+  background-color: #0056b3;
+}

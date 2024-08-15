@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // Import Link and useNavigate
+import { Link } from 'react-router-dom';
 import supabase from '../client'; // Import supabase client
 import Card from '../components/Card';
+import './ShowCreators.css'; // Import the CSS file
 
 const ShowCreators = () => {
   const [creators, setCreators] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchCreators = async () => {
@@ -50,11 +50,14 @@ const ShowCreators = () => {
   };
 
   return (
-    <div>
-      <h1>All Content Creators</h1>
-      <div className="creators-list">
+    <div className="show-creators-container">
+      <h1 className="show-creators-title">Put your favorite YouTubers here!</h1>
+      <Link to="/add" className="show-creators-button">
+        Add New Creator
+      </Link>
+      <div className="show-creators-list">
         {creators.length === 0 ? (
-          <p>No content creators found.</p>
+          <p className="show-creators-empty">No content creators found.</p>
         ) : (
           creators.map(creator => (
             <Card
@@ -66,13 +69,11 @@ const ShowCreators = () => {
               viewUrl={`/view/${creator.creator_id}`}
               editUrl={`/edit/${creator.creator_id}`}
               onDelete={() => handleDelete(creator.creator_id)}
+              className="show-creators-card"
             />
           ))
         )}
       </div>
-      <Link to="/add" className="button">
-        Add New Creator
-      </Link>
     </div>
   );
 };

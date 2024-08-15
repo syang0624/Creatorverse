@@ -1,0 +1,68 @@
+/* EditCreator.css */
+
+/* Container for the form */
+.edit-creator-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title */
+.edit-creator-title {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: black;
+  text-align: center;
+}
+
+/* Form layout */
+.edit-creator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Label styling */
+.edit-creator-label {
+  font-size: 1em;
+  color: black;
+  margin-bottom: 4px;
+}
+
+/* Input fields and textarea */
+.edit-creator-input,
+.edit-creator-textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.edit-creator-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Placeholder text */
+.edit-creator-input::placeholder,
+.edit-creator-textarea::placeholder {
+  color: #aaa;
+}
+
+/* Submit button */
+.edit-creator-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-creator-button:hover {
+  background-color: #0056b3;
+}
