@@ -40,6 +40,8 @@ Here's a walkthrough of implemented required features:
 
 <img src='https://i.imgur.com/rBGVL7r.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+In case GIF is not visible please refer here[https://imgur.com/rBGVL7r]
+
 <!-- Replace this with whatever GIF tool you used! -->
 
 GIF created with Kap
