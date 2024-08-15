@@ -39,6 +39,17 @@ const ViewCreator = () => {
         imageURL={creator.imageURL}
         className="view-creator-card"
       />
+      <div className="view-creator-video">
+        {creator.featuredVideoUrl && (
+          <iframe
+            title={`${creator.name} Featured Video`}
+            src={`https://www.youtube.com/embed/${creator.featuredVideoUrl}`}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        )}
+      </div>
       <div className="view-creator-actions">
         <Link
           to={`/edit/${creator.creator_id}`}
