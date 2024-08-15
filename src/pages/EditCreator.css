@@ -1,4 +1,3 @@
-/* Container for the form */
 .edit-creator-container {
   max-width: 600px;
   margin: 0 auto;
@@ -8,7 +7,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Form title */
 .edit-creator-title {
   font-size: 2em;
   margin-bottom: 20px;
@@ -16,21 +14,18 @@
   color: black;
 }
 
-/* Form layout */
 .edit-creator-form {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-/* Label styling */
 .edit-creator-label {
   font-size: 1em;
   color: black;
   margin-bottom: 4px;
 }
 
-/* Input fields and textarea */
 .edit-creator-input,
 .edit-creator-textarea {
   padding: 10px;
@@ -44,13 +39,11 @@
   min-height: 100px;
 }
 
-/* Placeholder text */
 .edit-creator-input::placeholder,
 .edit-creator-textarea::placeholder {
   color: #aaa;
 }
 
-/* Submit button */
 .edit-creator-button {
   padding: 10px 20px;
   font-size: 1em;

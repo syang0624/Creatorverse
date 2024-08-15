@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import supabase from '../client'; // Import supabase client
+import supabase from '../client';
 import Card from '../components/Card';
-import './ShowCreators.css'; // Import the CSS file
+import './ShowCreators.css';
 
 const ShowCreators = () => {
   const [creators, setCreators] = useState([]);
@@ -14,7 +14,7 @@ const ShowCreators = () => {
         if (error) {
           console.error('Error fetching creators:', error);
         } else {
-          console.log('Fetched creators:', data); // Debugging statement
+          console.log('Fetched creators:', data);
           setCreators(data);
         }
       } catch (error) {
@@ -26,7 +26,7 @@ const ShowCreators = () => {
   }, []);
 
   const handleDelete = async creator_id => {
-    console.log('Deleting creator with creator_id:', creator_id); // Debugging statement
+    console.log('Deleting creator with creator_id:', creator_id);
     if (!creator_id) {
       console.error('No creator_id provided for deletion');
       return;

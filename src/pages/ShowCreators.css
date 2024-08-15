@@ -1,17 +1,14 @@
-/* Container for the entire page */
 .show-creators-container {
   padding: 16px;
   font-family: Arial, sans-serif;
 }
 
-/* Title styling */
 .show-creators-title {
   text-align: center;
   margin-bottom: 24px;
   font-size: 1.8em;
 }
 
-/* Button styling */
 .show-creators-button {
   display: inline-block;
   padding: 8px 16px;
@@ -30,22 +27,19 @@
   background-color: #0056b3;
 }
 
-/* Flex container for the list of creators */
 .show-creators-list {
   display: flex;
-  flex-wrap: wrap; /* Allows cards to wrap onto multiple lines */
-  gap: 16px; /* Spacing between cards */
-  justify-content: center; /* Center align the cards */
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
 }
 
-/* Empty state styling */
 .show-creators-empty {
   text-align: center;
   font-size: 1.2em;
   color: #666;
 }
 
-/* Specific card styling if needed */
 .show-creators-card {
-  width: 300px; /* Set a fixed width for the cards */
+  width: 300px;
 }

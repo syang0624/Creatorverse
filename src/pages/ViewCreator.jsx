@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import supabase from '../client';
 import Card from '../components/Card';
-import './ViewCreator.css'; // Import CSS file
+import './ViewCreator.css';
 
 const ViewCreator = () => {
   const { id } = useParams();
@@ -13,7 +13,7 @@ const ViewCreator = () => {
       const { data, error } = await supabase
         .from('creators')
         .select('*')
-        .eq('creator_id', id) // Ensure the correct column name is used
+        .eq('creator_id', id)
         .single();
       if (error) {
         console.error('Error fetching creator:', error);

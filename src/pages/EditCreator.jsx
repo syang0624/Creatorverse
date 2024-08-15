@@ -5,7 +5,7 @@ import './EditCreator.css';
 
 const EditCreator = () => {
   const { id } = useParams();
-  const navigate = useNavigate(); // Use navigate instead of history
+  const navigate = useNavigate();
   const [creator, setCreator] = useState({
     name: '',
     url: 'https://',
@@ -18,7 +18,7 @@ const EditCreator = () => {
       const { data, error } = await supabase
         .from('creators')
         .select('*')
-        .eq('creator_id', id) // Ensure the correct column name is used
+        .eq('creator_id', id)
         .single();
       if (error) {
         console.error('Error fetching creator:', error);
@@ -45,11 +45,11 @@ const EditCreator = () => {
         description: creator.description,
         imageURL: creator.imageURL,
       })
-      .eq('creator_id', id); // Ensure the correct column name is used
+      .eq('creator_id', id);
     if (error) {
       console.error('Error updating creator:', error);
     } else {
-      navigate('/'); // Use navigate for routing
+      navigate('/');
     }
   };
 

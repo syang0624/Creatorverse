@@ -2,35 +2,30 @@
   padding: 20px;
   font-family: Arial, sans-serif;
   max-width: 100vw;
-  /* margin: 0 auto; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-/* Title styling */
 .view-creator-title {
   text-align: center;
   font-size: 2em;
   margin-bottom: 20px;
 }
 
-/* Loading text styling */
 .view-creator-loading {
   text-align: center;
   font-size: 1.2em;
   color: #666;
 }
 
-/* Card styling */
 .view-creator-card {
   margin: 0 auto;
-  width: 100%; /* Ensure the card fits within the container */
-  max-width: 600px; /* Set a max width for the card */
+  width: 100%;
+  max-width: 600px;
 }
 
-/* Actions container */
 .view-creator-actions {
   display: flex;
   justify-content: center;
@@ -38,7 +33,6 @@
   margin-top: 20px;
 }
 
-/* Button styling */
 .view-creator-button {
   display: inline-block;
   padding: 10px 20px;
